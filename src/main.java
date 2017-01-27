@@ -12,16 +12,11 @@ public class main {
         long secondIpLong = ipToLong(secondIp);
         //создаем массив промежутка адрессов в long
         long longAddresses[] = makeIpArray(firstIpLong, secondIpLong);
-        
 
-        for (int i = 0; i < longAddresses.length; i++) {
-            System.out.println(longAddresses[i]);
+
+        for (int i = 1; i < longAddresses.length; i++) {
+            System.out.println(longToIp(longAddresses[i]));
         }
-
-
-
-
-
     }
 
     //Конвертируем ip-адреса в Long
@@ -58,6 +53,23 @@ public class main {
             longAddresses[i] = firstIp + i;
         }
         return longAddresses;
+    }
+
+
+    public static String longToIp(long ip) {
+        StringBuilder result = new StringBuilder(15);
+
+        for (int i = 0; i < 4; i++) {
+
+            result.insert(0,Long.toString(ip & 0xff));
+
+            if (i < 3) {
+                result.insert(0,'.');
+            }
+
+            ip = ip >> 8;
+        }
+        return result.toString();
     }
 
 
