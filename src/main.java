@@ -1,25 +1,29 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+
 public class main {
     public static void main(String[] args) throws java.io.IOException{
-        //Вводим первый ip-адрес
-        System.out.println("Введите первый ip-адрес");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String firstIp = reader.readLine();
+        //Вводим адреса
+        String firstIp = inputIp("Введите первый ip-адрес");
+        String secondIp = inputIp("Введите второй ip-адрес");
+        //Конвертируем адреса в long
+        long firstIpLong = ipToLong(firstIp);
+        long secondIpLong = ipToLong(secondIp);
+        //создаем массив промежутка адрессов в long
+        long longAddresses[] = makeIpArray(firstIpLong, secondIpLong);
+        
 
-        //Вводим второй ip-адрес
-        System.out.println("Введите второй ip-адрес");
-        String secondIp = reader.readLine();
+        for (int i = 0; i < longAddresses.length; i++) {
+            System.out.println(longAddresses[i]);
+        }
 
 
 
-        System.out.println(ipToLong(firstIp));
-        System.out.println(ipToLong(secondIp));
 
 
     }
-    
+
     //Конвертируем ip-адреса в Long
     public static long ipToLong(String ipAddresses)
     {
@@ -33,6 +37,27 @@ public class main {
             result += ip * Math.pow(256, power);
         }
         return result;
+    }
+    //ввод адресов
+    public static String inputIp(String message) throws java.io.IOException
+    {
+        System.out.println(message);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String ip = reader.readLine();
+        return ip;
+    }
+
+    public static long[] makeIpArray (long firstIp, long secondIp)
+    {
+        //Вычисляем диапозон между адресами
+        int d = (int)secondIp - (int)firstIp;
+        long[] longAddresses = new long[d];
+
+        for (int i = 0; i < longAddresses.length ; i++)
+        {
+            longAddresses[i] = firstIp + i;
+        }
+        return longAddresses;
     }
 
 
