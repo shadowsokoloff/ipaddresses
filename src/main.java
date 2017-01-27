@@ -12,8 +12,29 @@ public class main {
         System.out.println("Введите второй ip-адрес");
         String secondIp = reader.readLine();
 
-        //Выводим адреса
-        System.out.println(firstIp);
-        System.out.println(secondIp);
+
+
+        System.out.println(ipToLong(firstIp));
+        System.out.println(ipToLong(secondIp));
+
+
     }
+    
+    //Конвертируем ip-адреса в Long
+    public static long ipToLong(String ipAddresses)
+    {
+        String[] ipAddressesInArray = ipAddresses.split("\\.");
+
+        long result = 0;
+        for (int i = 0; i < ipAddressesInArray.length; i++) {
+
+            int power = 3 - i;
+            int ip = Integer.parseInt(ipAddressesInArray[i]);
+            result += ip * Math.pow(256, power);
+        }
+        return result;
+    }
+
+
+
 }
