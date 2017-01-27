@@ -16,9 +16,8 @@ public class main {
         //создаем массив промежутка адрессов в long
         Long longAddresses[] = makeIpArray(firstIpLong, secondIpLong);
 
-
         //выводим массив адресов
-       printArray(longAddresses);
+        printArray(longAddresses);
     }
 
 
@@ -26,10 +25,8 @@ public class main {
     public static long ipToLong(String ipAddresses)
     {
         String[] ipAddressesInArray = ipAddresses.split("\\.");
-
         long result = 0;
         for (int i = 0; i < ipAddressesInArray.length; i++) {
-
             int power = 3 - i;
             int ip = Integer.parseInt(ipAddressesInArray[i]);
             result += ip * Math.pow(256, power);
@@ -61,9 +58,12 @@ public class main {
         {
 
              if ((firstIp + i)%256==255) {
-                longAddresses[i] = firstIp + i + 2;
+                longAddresses[i] = firstIp + i + 1;
                 b=true;
                 adressesLength-=2;
+                if ((firstIp + i)%256==0) {
+                    longAddresses[i] = firstIp + i + 1;
+                }
             }
              if (b) {
                 longAddresses[i] = firstIp + i + 2;
