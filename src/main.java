@@ -3,12 +3,22 @@ import java.io.InputStreamReader;
 
 
 public class main {
-    public static void main(String[] args) throws java.io.IOException{
+    public static void main(String[] args) throws java.io.IOException {
+
 
         //Вводим адреса
-        String firstIp = inputIp("Введите первый ip-адрес");
-        String secondIp = inputIp("Введите второй ip-адрес");
+        String firstIp;
+        String secondIp;
 
+        while (true) {
+            firstIp = inputIp("Введите первый ip-адрес");
+            secondIp = inputIp("Введите второй ip-адрес");
+            if (firstIp.compareTo(secondIp) == 0) {
+                System.out.println("адреса равны!");
+            } else {break;}
+        }
+
+        
         //Конвертируем адреса в long
         Long firstIpLong = ipToLong(firstIp);
         Long secondIpLong = ipToLong(secondIp);
@@ -47,9 +57,22 @@ public class main {
     public static Long[] makeIpArray (Long firstIpLong, Long secondIpLong)
     {
         //Вычисляем диапозон между адресами
-        long firstIp = (long)firstIpLong;
-        long secondIp = (long)secondIpLong;
-        int d = (int)secondIp - (int)firstIp;
+        long firstIp;
+        long secondIp;
+        int d;
+
+        //проверка корректности ввода диапозона адресов
+        if (secondIpLong>firstIpLong)
+        {
+            firstIp = firstIpLong;
+            secondIp = secondIpLong;
+        } else {
+             firstIp = secondIpLong;
+             secondIp = firstIpLong;
+        }
+        d = (int)secondIp - (int) firstIp;
+
+
         Long[] longAddresses = new Long[d+1];
         boolean b = false;
         int adressesLength = longAddresses.length;
