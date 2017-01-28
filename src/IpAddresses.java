@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-public class main {
+public class IpAddresses {
     public static void main(String[] args) throws java.io.IOException {
 
 
@@ -18,7 +18,7 @@ public class main {
             } else {break;}
         }
 
-        
+
         //Конвертируем адреса в long
         Long firstIpLong = ipToLong(firstIp);
         Long secondIpLong = ipToLong(secondIp);
