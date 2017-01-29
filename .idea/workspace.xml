@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f071e88c-758c-48db-a4e3-5ab12e91c8b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jcommander.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/testng.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ipaddresses/IpAddresses.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/ipaddresses/TestMain.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/TestMain.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ipaddresses/main.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/IpAddresses.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ipaddresses.iml" afterPath="$PROJECT_DIR$/ipaddresses.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TestMain.java" afterPath="$PROJECT_DIR$/test/TestMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,38 +19,56 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IpAddresses.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
-                <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
-                <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-                <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
-                <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
-                <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/TestMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6529774">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="IpAddresses.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="65">
+                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
+                    <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
+                    <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
+                    <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/TestMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/TestMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -432,8 +444,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.TestMain" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testMain" />
-        <item index="2" class="java.lang.String" itemvalue="Application.IpAddresses" />
+        <item index="1" class="java.lang.String" itemvalue="Application.IpAddresses" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testMain" />
         <item index="3" class="java.lang.String" itemvalue="Application.main" />
         <item index="4" class="java.lang.String" itemvalue="Application.test" />
       </list>
@@ -453,19 +465,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMain - 2017.01.28 at 20h 19m 38s.xml">
+    <history-entry file="TestMain - 2017.01.29 at 17h 22m 18s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMain - 2017.01.28 at 19h 44m 13s.xml">
-      <configuration name="testMain" configurationId="JUnit" />
+    <history-entry file="TestMain - 2017.01.29 at 17h 23m 54s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMain - 2017.01.28 at 20h 19m 18s.xml">
-      <configuration name="testMain" configurationId="JUnit" />
+    <history-entry file="TestMain - 2017.01.29 at 17h 28m 41s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 29m 50s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 31m 08s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 31m 56s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 34m 27s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 35m 29s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 36m 11s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMain - 2017.01.29 at 17h 36m 43s.xml">
+      <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -482,7 +515,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -505,7 +538,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -522,10 +555,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,37 +569,33 @@
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
+    <entry file="file://$PROJECT_DIR$/test/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestMain.java">
+    <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="65">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
