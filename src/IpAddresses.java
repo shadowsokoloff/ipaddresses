@@ -3,8 +3,11 @@ import java.io.InputStreamReader;
 
 
 public class IpAddresses {
-    public static void main(String[] args) throws java.io.IOException {
 
+    private static String messageFromTryParse;
+
+
+    public static void main(String[] args) throws java.io.IOException {
 
         String firstIp;
         String secondIp;
@@ -46,6 +49,9 @@ public class IpAddresses {
     //ввод адресов
     public static String inputIp(String message) throws java.io.IOException
     {
+
+
+
         while (true) {
             System.out.println(message);
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -53,20 +59,30 @@ public class IpAddresses {
             if (tryParseLong(ip)) {
                 return ip;
             } else {
-                System.out.println("Вы ввели некорретную строку");
+                System.out.println(messageFromTryParse);
             }
         }
     }
 
+    //проверка парсинга адресов
     public static boolean tryParseLong(String value) {
+
+
         String[] valueArray = value.split("\\.");
         boolean k = false;
 
         for (int i = 0; i < valueArray.length; i++) {
             try {
-                Long.parseLong(valueArray[i]);
-                k = true;
+                long state = Long.parseLong(valueArray[i]);
+                if(state < 1L || state > 254L)
+                {
+                    IpAddresses.messageFromTryParse = "Вы ввели неверный адрес";
+                    break;
+                } else {
+                    k = true;
+                }
             } catch (NumberFormatException e) {
+                IpAddresses.messageFromTryParse = "Вы ввели неверную строку";
                 k = false;
             }
         } return  k;
