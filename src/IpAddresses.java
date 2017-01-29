@@ -6,7 +6,6 @@ public class IpAddresses {
     public static void main(String[] args) throws java.io.IOException {
 
 
-        //Вводим адреса
         String firstIp;
         String secondIp;
 
@@ -47,10 +46,30 @@ public class IpAddresses {
     //ввод адресов
     public static String inputIp(String message) throws java.io.IOException
     {
-        System.out.println(message);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String ip = reader.readLine();
-        return ip;
+        while (true) {
+            System.out.println(message);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String ip = reader.readLine();
+            if (tryParseLong(ip)) {
+                return ip;
+            } else {
+                System.out.println("Вы ввели некорретную строку");
+            }
+        }
+    }
+
+    public static boolean tryParseLong(String value) {
+        String[] valueArray = value.split("\\.");
+        boolean k = false;
+
+        for (int i = 0; i < valueArray.length; i++) {
+            try {
+                Long.parseLong(valueArray[i]);
+                k = true;
+            } catch (NumberFormatException e) {
+                k = false;
+            }
+        } return  k;
     }
 
     //Создаем массив адресов типа long
