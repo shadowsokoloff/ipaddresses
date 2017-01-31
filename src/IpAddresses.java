@@ -2,11 +2,13 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-public class main {
+public class IpAddresses {
+
+    private static String messageFromTryParse;
+
+
     public static void main(String[] args) throws java.io.IOException {
 
-
-        //Вводим адреса
         String firstIp;
         String secondIp;
 
@@ -18,7 +20,7 @@ public class main {
             } else {break;}
         }
 
-        
+
         //Конвертируем адреса в long
         Long firstIpLong = ipToLong(firstIp);
         Long secondIpLong = ipToLong(secondIp);
@@ -47,10 +49,41 @@ public class main {
     //ввод адресов
     public static String inputIp(String message) throws java.io.IOException
     {
-        System.out.println(message);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String ip = reader.readLine();
-        return ip;
+        while (true) {
+            System.out.println(message);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String ip = reader.readLine();
+            if (tryParseLong(ip)) {
+                return ip;
+            } else {
+                System.out.println(messageFromTryParse);
+            }
+        }
+    }
+
+    //проверка парсинга адресов
+    public static boolean tryParseLong(String value) {
+
+
+        String[] valueArray = value.split("\\.");
+        boolean k = false;
+
+        for (int i = 0; i < valueArray.length; i++) {
+            try {
+                long state = Long.parseLong(valueArray[i]);
+                if(state < 1L || state > 254L)
+                {
+                    IpAddresses.messageFromTryParse = "Вы ввели неверный адрес";
+                    k=false;
+                    break;
+                } else {
+                    k = true;
+                }
+            } catch (NumberFormatException e) {
+                IpAddresses.messageFromTryParse = "Вы ввели неверную строку";
+                k = false;
+            }
+        } return  k;
     }
 
     //Создаем массив адресов типа long
