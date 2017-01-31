@@ -49,9 +49,6 @@ public class IpAddresses {
     //ввод адресов
     public static String inputIp(String message) throws java.io.IOException
     {
-
-
-
         while (true) {
             System.out.println(message);
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

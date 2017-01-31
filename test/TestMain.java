@@ -1,6 +1,9 @@
-import org.junit.Before;
+import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
+import java.io.InputStream;
+
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -30,6 +33,38 @@ public class TestMain {
             assertEquals(expectedArray[i],ipArray[i]);
         }
 
+    }
+
+    @Test
+    public void testTryParse() throws IOException {
+        IpAddresses ia = new IpAddresses();
+        boolean result = ia.tryParseLong("192.168.1.1");
+
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void testTryParseFalse() throws IOException {
+        IpAddresses ia = new IpAddresses();
+        boolean result = ia.tryParseLong("Привет!");
+
+        assertEquals(false, result);
+    }
+
+    @Test
+    public void testLongToIp()
+    {
+        IpAddresses ia = new IpAddresses();
+        String address = ia.longToIp(3232235777L);
+
+        assertEquals("192.168.1.1", address);
+    }
+
+    @Test
+    public void testPrintArray()
+    {
+        IpAddresses ia = new IpAddresses();
+        ia.printArray();
     }
 
 }
