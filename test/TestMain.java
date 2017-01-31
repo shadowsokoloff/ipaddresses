@@ -1,9 +1,7 @@
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
-import java.io.InputStream;
 
-
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -13,52 +11,50 @@ public class TestMain {
     Long firstIpLong = 3232235777L;
     Long secondIpLong = 3232235786L;
     Long[] expectedArray = {3232235777L, 3232235778L, 3232235779L, 3232235780L, 3232235781L, 3232235782L, 3232235783L, 3232235784L, 3232235785L, null};
+    String defaultIp = "192.168.1.1";
+    String invalidIp = "192.168.1.255";
 
 
     @Test
     public void testIpToLong() throws IOException {
         IpAddresses ia = new IpAddresses();
-        long address = ia.ipToLong("192.168.1.1");
+        Long address = ia.ipToLong(defaultIp);
 
-        assertEquals(3232235777L,address);
+        assertEquals( firstIpLong, address);
     }
 
 
     @Test
     public void testMakeIpArray() {
         IpAddresses ia = new IpAddresses();
-        Long[] ipArray = ia.makeIpArray(firstIpLong,secondIpLong);
+        Long[] ipArray = ia.makeIpArray(firstIpLong, secondIpLong);
 
-        for (int i = 0; i<ipArray.length; i++) {
-            assertEquals(expectedArray[i],ipArray[i]);
-        }
+        assertArrayEquals(expectedArray, ipArray);
 
     }
 
     @Test
     public void testTryParse() throws IOException {
         IpAddresses ia = new IpAddresses();
-        boolean result = ia.tryParseLong("192.168.1.1");
+        boolean result = ia.tryParseLong(defaultIp);
+        boolean resultFalse = ia.tryParseLong("Привет!");
+        boolean resultInvalid = ia.tryParseLong(invalidIp);
 
         assertEquals(true, result);
+        assertEquals(false, resultFalse);
+        assertEquals(false, resultInvalid);
+
     }
 
-    @Test
-    public void testTryParseFalse() throws IOException {
-        IpAddresses ia = new IpAddresses();
-        boolean result = ia.tryParseLong("Привет!");
-
-        assertEquals(false, result);
-    }
 
     @Test
     public void testLongToIp()
     {
         IpAddresses ia = new IpAddresses();
-        String address = ia.longToIp(3232235777L);
+        String address = ia.longToIp(firstIpLong);
 
-        assertEquals("192.168.1.1", address);
+        assertEquals(defaultIp, address);
     }
-    
+
 
 }

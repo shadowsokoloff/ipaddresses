@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f071e88c-758c-48db-a4e3-5ab12e91c8b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IpAddresses.java" afterPath="$PROJECT_DIR$/src/IpAddresses.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TestMain.java" afterPath="$PROJECT_DIR$/test/TestMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,21 +18,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54916793">
+    <splitter split-orientation="horizontal" split-proportion="0.50832075">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="IpAddresses.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+                <state relative-caret-position="160">
+                  <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
                     <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
                     <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-                    <element signature="method#tryParseLong#0;class#IpAddresses#0" expanded="false" />
                     <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
                     <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+                    <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -44,7 +46,7 @@
                   <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1485894406587" expanded="true" signature="1022:1167" ph="{...}" />
+                    <marker date="1485897339465" expanded="true" signature="1050:1396" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -57,15 +59,10 @@
           <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/TestMain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+                <state relative-caret-position="935">
+                  <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#testIpToLong#0;class#TestMain#0" expanded="false" />
-                    <element signature="method#testMakeIpArray#0;class#TestMain#0" expanded="false" />
-                    <element signature="method#testTryParse#0;class#TestMain#0" expanded="false" />
-                    <element signature="method#testTryParseFalse#0;class#TestMain#0" expanded="false" />
-                    <element signature="method#testLongToIp#0;class#TestMain#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -479,34 +476,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMain - 2017.01.29 at 17h 31m 56s.xml">
+    <history-entry file="TestMain - 2017.01.31 at 23h 28m 26s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.29 at 17h 34m 27s.xml">
+    <history-entry file="TestMain - 2017.01.31 at 23h 28m 57s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.29 at 17h 35m 29s.xml">
+    <history-entry file="TestMain - 2017.01.31 at 23h 44m 42s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.29 at 17h 36m 11s.xml">
+    <history-entry file="TestMain - 2017.01.31 at 23h 48m 36s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.29 at 17h 36m 43s.xml">
+    <history-entry file="TestMain - 2017.01.31 at 23h 56m 11s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.29 at 23h 37m 16s.xml">
+    <history-entry file="TestMain - 2017.02.01 at 00h 00m 45s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.30 at 00h 34m 00s.xml">
+    <history-entry file="TestMain - 2017.02.01 at 00h 02m 37s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.31 at 22h 54m 14s.xml">
+    <history-entry file="TestMain - 2017.02.01 at 00h 03m 25s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.31 at 22h 55m 31s.xml">
+    <history-entry file="TestMain - 2017.02.01 at 00h 10m 42s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMain - 2017.01.31 at 23h 13m 15s.xml">
+    <history-entry file="TestMain - 2017.02.01 at 00h 15m 43s.xml">
       <configuration name="TestMain" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -524,12 +521,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24273504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46324787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -541,7 +539,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -552,7 +549,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -567,11 +564,12 @@
           <caret line="53" column="77" lean-forward="false" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#tryParseLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,11 +580,6 @@
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testIpToLong#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testMakeIpArray#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testTryParse#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testTryParseFalse#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testLongToIp#0;class#TestMain#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -597,11 +590,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#tryParseLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,11 +606,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#tryParseLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,30 +619,26 @@
     <entry file="file://$PROJECT_DIR$/src/test.java" />
     <entry file="file://$PROJECT_DIR$/src/IpAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        <state relative-caret-position="160">
+          <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#ipToLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#inputIp#0;class#IpAddresses#0" expanded="false" />
-            <element signature="method#tryParseLong#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#makeIpArray#0;class#IpAddresses#0" expanded="false" />
             <element signature="method#longToIp#0;class#IpAddresses#0" expanded="false" />
+            <element signature="method#printArray#0;class#IpAddresses#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        <state relative-caret-position="935">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testIpToLong#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testMakeIpArray#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testTryParse#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testTryParseFalse#0;class#TestMain#0" expanded="false" />
-            <element signature="method#testLongToIp#0;class#TestMain#0" expanded="false" />
           </folding>
         </state>
       </provider>

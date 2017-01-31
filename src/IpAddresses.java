@@ -74,6 +74,7 @@ public class IpAddresses {
                 if(state < 1L || state > 254L)
                 {
                     IpAddresses.messageFromTryParse = "Вы ввели неверный адрес";
+                    k=false;
                     break;
                 } else {
                     k = true;
