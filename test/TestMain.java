@@ -59,12 +59,6 @@ public class TestMain {
 
         assertEquals("192.168.1.1", address);
     }
-
-    @Test
-    public void testPrintArray()
-    {
-        IpAddresses ia = new IpAddresses();
-        ia.printArray();
-    }
+    
 
 }
